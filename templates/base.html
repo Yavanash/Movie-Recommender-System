@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommender</title>
+    
+    <style>
+        body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  header p {
+    text-align: center;
+    color: #808080;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .search select,
+  .search input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .search button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .movie-placeholder {
+    text-align: center;
+    padding: 20px;
+    border: 1px dashed #ccc;
+  }
+  
+  footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+  }
+  
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Movie Finder</h1>
+    <p>Find your next cinematic adventure!</p>
+  </header>
+
+  <main>
+    <section class="search">
+      <h2>Tell us your taste</h2>
+      <form id="search-form">
+        <label for="genre">Genre:</label>
+        <select name="genre" id="genre">
+          <option value="all">All Genres</option>
+          <option value="action">Action</option>
+          <option value="comedy">Comedy</option>
+          <option value="drama">Drama</option>
+          <option value="fantasy">Fantasy</option>
+          </select>
+        <br>
+        <label for="keyword">Keyword (optional):</label>
+        <input type="text" name="keyword" id="keyword" placeholder="Search by actor, director, etc.">
+        <br>
+        <button type="submit">Find Movies</button>
+      </form>
+    </section>
+
+    <section class="recommendations" id="recommendations">
+      <h2>Recommended Movies</h2>
+      <div class="movie-placeholder">
+        <p>Looking for movies...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Movie Finder</p>
+  </footer>
+</body>
+</html>
