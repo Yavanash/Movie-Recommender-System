@@ -12,7 +12,7 @@ A content-based movie recommendation system that suggests similar movies based o
 
 ## Technologies Used
 
-- Python 3.x
+- Python 3.10
 - Pandas: Data manipulation and analysis
 - NumPy: Numerical computing
 - Scikit-learn: Machine learning tools
